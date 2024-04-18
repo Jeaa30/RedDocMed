@@ -207,7 +207,7 @@ namespace RedDocMed2
             string Pais = cbPais.Items.ToString();
             string Provincia = cbProvincia.Items.ToString();
             string Direccion = txtDireccion.Text;
-            
+            MessageBox.Show("Informaciones basicas guardadas exitosamente.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void cbSexo_SelectedIndexChanged(object sender, EventArgs e)
