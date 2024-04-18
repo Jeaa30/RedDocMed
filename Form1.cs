@@ -703,6 +703,12 @@ namespace RedDocMed2
         {
 
         }
+
+        private void bttBorrar_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Datos borrados correctamente.");
+        }
     }
 }
 
