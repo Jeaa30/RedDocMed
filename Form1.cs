@@ -29,8 +29,13 @@ namespace RedDocMed2
 
             InitializeComponent();
 
-            //Alimentando el Combo Box Pais
             
+            cbSexo.Items.Add("Masculino");
+            cbSexo.Items.Add("Femenino");
+            
+
+            //Alimentando el Combo Box Pais
+
             ProcedenciaPais();
             var bindingSource1 = new BindingSource();
             bindingSource1.DataSource = listPais;
@@ -39,6 +44,8 @@ namespace RedDocMed2
 
             cbPais.DisplayMember = "Nombre";
             cbPais.ValueMember = "ID";
+
+            
 
             
 
@@ -183,7 +190,15 @@ namespace RedDocMed2
 
 
         }
+        
+        public void Sexo() 
+        {
+            cbSexo.Items.Add(new Sexo() { Masculino = "Masculino" });
+            cbSexo.Items.Add(new Sexo() { Femenino = "Femenino" });
+        }
+            
 
+            
 
 
         private void cbPais_SelectionChangeCommitted(object sender, EventArgs e)
@@ -212,8 +227,8 @@ namespace RedDocMed2
 
         private void cbSexo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cbSexo.Items.Add("Masculino");
-            cbSexo.Items.Add("Femenino");
+            string selectedSexo = cbSexo.SelectedItem.ToString();
+
         }
 
         private  void tabPage2_Click(object sender, EventArgs e)
