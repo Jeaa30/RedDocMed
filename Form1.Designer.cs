@@ -144,14 +144,14 @@
             this.Guardar6 = new System.Windows.Forms.Button();
             this.MTVTEXT = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label37 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.HabtitosToxicos.SuspendLayout();
             this.Apellido_Informacion.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -174,9 +174,9 @@
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HabtitosToxicos
@@ -254,6 +254,7 @@
             this.cbProvincia.Name = "cbProvincia";
             this.cbProvincia.Size = new System.Drawing.Size(203, 24);
             this.cbProvincia.TabIndex = 12;
+            this.cbProvincia.SelectedIndexChanged += new System.EventHandler(this.cbProvincia_SelectedIndexChanged);
             // 
             // cbSexo
             // 
@@ -271,6 +272,7 @@
             this.cbPais.Name = "cbPais";
             this.cbPais.Size = new System.Drawing.Size(203, 24);
             this.cbPais.TabIndex = 11;
+            this.cbPais.SelectedIndexChanged += new System.EventHandler(this.cbPais_SelectedIndexChanged);
             this.cbPais.SelectionChangeCommitted += new System.EventHandler(this.cbPais_SelectionChangeCommitted);
             // 
             // monthCalendar1
@@ -422,6 +424,7 @@
             this.Nombre_del_Paciente.Name = "Nombre_del_Paciente";
             this.Nombre_del_Paciente.Size = new System.Drawing.Size(295, 22);
             this.Nombre_del_Paciente.TabIndex = 7;
+            this.Nombre_del_Paciente.TextChanged += new System.EventHandler(this.Nombre_del_Paciente_TextChanged);
             // 
             // tabPage2
             // 
@@ -1496,6 +1499,64 @@
             this.label36.TabIndex = 41;
             this.label36.Text = "Motivos de Consulta con Historia de la Actualidad";
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.textBox1);
+            this.tabPage6.Controls.Add(this.label37);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1040, 526);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "Estudios de Imagenes y Laboratorios";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(210, 113);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(500, 22);
+            this.textBox1.TabIndex = 43;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Franklin Gothic Heavy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(204, 71);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(517, 29);
+            this.label37.TabIndex = 42;
+            this.label37.Text = "Estudios a realizar de imagenes y laboratorios";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.textBox2);
+            this.tabPage7.Controls.Add(this.label38);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1040, 526);
+            this.tabPage7.TabIndex = 7;
+            this.tabPage7.Text = "Diagnostico y Tratamiento";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(247, 115);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(500, 22);
+            this.textBox2.TabIndex = 44;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Franklin Gothic Heavy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(242, 67);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(517, 29);
+            this.label38.TabIndex = 43;
+            this.label38.Text = "Estudios a realizar de imagenes y laboratorios";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1519,64 +1580,6 @@
             this.label10.Size = new System.Drawing.Size(400, 101);
             this.label10.TabIndex = 2;
             this.label10.Text = "RegDocMed";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.textBox1);
-            this.tabPage6.Controls.Add(this.label37);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1040, 526);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "Estudios de Imagenes y Laboratorios";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Franklin Gothic Heavy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(204, 71);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(517, 29);
-            this.label37.TabIndex = 42;
-            this.label37.Text = "Estudios a realizar de imagenes y laboratorios";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(210, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(500, 22);
-            this.textBox1.TabIndex = 43;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.textBox2);
-            this.tabPage7.Controls.Add(this.label38);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1040, 526);
-            this.tabPage7.TabIndex = 7;
-            this.tabPage7.Text = "Diagnostico y Tratamiento";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Franklin Gothic Heavy", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(242, 67);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(517, 29);
-            this.label38.TabIndex = 43;
-            this.label38.Text = "Estudios a realizar de imagenes y laboratorios";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(247, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(500, 22);
-            this.textBox2.TabIndex = 44;
             // 
             // Form1
             // 
@@ -1630,11 +1633,11 @@
             this.groupBox5.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

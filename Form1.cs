@@ -28,8 +28,9 @@ namespace RedDocMed2
         {
 
             InitializeComponent();
-            
+
             //Alimentando el Combo Box Pais
+            
             ProcedenciaPais();
             var bindingSource1 = new BindingSource();
             bindingSource1.DataSource = listPais;
@@ -49,14 +50,28 @@ namespace RedDocMed2
 
         public void ProcedenciaPais()
         {
+
+            listPais.Add(new Pais() { ID = 0, Nombre = "Seleccione un pais..." });
             listPais.Add(new Pais() { ID = 1, Nombre = "Republica Dominicana" });
             listPais.Add(new Pais() { ID = 2, Nombre = "Estdos Unidos" });
             listPais.Add(new Pais() { ID = 3, Nombre = "España" });
+            listPais.Add(new Pais() { ID = 4, Nombre = "México" });
+            listPais.Add(new Pais() { ID = 5, Nombre = "Argentina" });
+            listPais.Add(new Pais() { ID = 6, Nombre = "Brasil" });
+            listPais.Add(new Pais() { ID = 7, Nombre = "Canadá" });
+            listPais.Add(new Pais() { ID = 8, Nombre = "Francia" });
+            listPais.Add(new Pais() { ID = 9, Nombre = "Alemania" });
+            listPais.Add(new Pais() { ID = 10, Nombre = "Italia" });
+
+            
+
+
 
         }
 
         public void ProcedenciaProvincia()
         {
+            
             listProvincia.Add(new Provincia() { ID = 1, IdPais = 1, Nombre = "Santo Domingo" });
             listProvincia.Add(new Provincia() { ID = 2, IdPais = 1, Nombre = "Santiago" });
             listProvincia.Add(new Provincia() { ID = 3, IdPais = 1, Nombre = "Puerto Plata" });
@@ -64,6 +79,108 @@ namespace RedDocMed2
             listProvincia.Add(new Provincia() { ID = 5, IdPais = 2, Nombre = "Washington D.C." });
             listProvincia.Add(new Provincia() { ID = 6, IdPais = 3, Nombre = "Madrid" });
             listProvincia.Add(new Provincia() { ID = 7, IdPais = 3, Nombre = "Barcelona" });
+            listProvincia.Add(new Provincia() { ID = 8, IdPais = 1, Nombre = "La Romana" });
+            listProvincia.Add(new Provincia() { ID = 9, IdPais = 1, Nombre = "San Pedro de Macorís" });
+            listProvincia.Add(new Provincia() { ID = 10, IdPais = 1, Nombre = "La Altagracia" });
+            listProvincia.Add(new Provincia() { ID = 11, IdPais = 1, Nombre = "San Cristóbal" });
+            listProvincia.Add(new Provincia() { ID = 12, IdPais = 1, Nombre = "La Vega" });
+            listProvincia.Add(new Provincia() { ID = 13, IdPais = 1, Nombre = "Barahona" });
+            listProvincia.Add(new Provincia() { ID = 14, IdPais = 1, Nombre = "Monte Plata" });
+            listProvincia.Add(new Provincia() { ID = 15, IdPais = 3, Nombre = "Madrid" });
+            listProvincia.Add(new Provincia() { ID = 16, IdPais = 3, Nombre = "Barcelona" });
+            listProvincia.Add(new Provincia() { ID = 17, IdPais = 3, Nombre = "Valencia" });
+            listProvincia.Add(new Provincia() { ID = 18, IdPais = 3, Nombre = "Sevilla" });
+            listProvincia.Add(new Provincia() { ID = 19, IdPais = 3, Nombre = "Zaragoza" });
+            listProvincia.Add(new Provincia() { ID = 20, IdPais = 3, Nombre = "Málaga" });
+            listProvincia.Add(new Provincia() { ID = 21, IdPais = 3, Nombre = "Murcia" });
+            listProvincia.Add(new Provincia() { ID = 22, IdPais = 3, Nombre = "Palma de Mallorca" });
+            listProvincia.Add(new Provincia() { ID = 23, IdPais = 3, Nombre = "Las Palmas de Gran Canaria" });
+            listProvincia.Add(new Provincia() { ID = 24, IdPais = 3, Nombre = "Bilbao" });
+            listProvincia.Add(new Provincia() { ID = 25, IdPais = 2, Nombre = "Illinois" });
+            listProvincia.Add(new Provincia() { ID = 26, IdPais = 2, Nombre = "Pennsylvania" });
+            listProvincia.Add(new Provincia() { ID = 27, IdPais = 2, Nombre = "Georgia" });
+            listProvincia.Add(new Provincia() { ID = 28, IdPais = 2, Nombre = "Ohio" });
+            listProvincia.Add(new Provincia() { ID = 29, IdPais = 2, Nombre = "Michigan" });
+            listProvincia.Add(new Provincia() { ID = 30, IdPais = 2, Nombre = "North Carolina" });
+            listProvincia.Add(new Provincia() { ID = 31, IdPais = 2, Nombre = "New Jersey" });
+            listProvincia.Add(new Provincia() { ID = 32, IdPais = 2, Nombre = "Virginia" });
+            listProvincia.Add(new Provincia() { ID = 33, IdPais = 4, Nombre = "Ciudad de México" });
+            listProvincia.Add(new Provincia() { ID = 34, IdPais = 4, Nombre = "Jalisco" });
+            listProvincia.Add(new Provincia() { ID = 35, IdPais = 4, Nombre = "Nuevo León" });
+            listProvincia.Add(new Provincia() { ID = 36, IdPais = 4, Nombre = "Veracruz" });
+            listProvincia.Add(new Provincia() { ID = 37, IdPais = 4, Nombre = "Puebla" });
+            listProvincia.Add(new Provincia() { ID = 38, IdPais = 4, Nombre = "Guanajuato" });
+            listProvincia.Add(new Provincia() { ID = 39, IdPais = 4, Nombre = "Chiapas" });
+            listProvincia.Add(new Provincia() { ID = 40, IdPais = 4, Nombre = "Michoacán" });
+            listProvincia.Add(new Provincia() { ID = 41, IdPais = 4, Nombre = "Sonora" });
+            listProvincia.Add(new Provincia() { ID = 42, IdPais = 4, Nombre = "Chihuahua" });
+            listProvincia.Add(new Provincia() { ID = 43, IdPais = 5, Nombre = "Buenos Aires" });
+            listProvincia.Add(new Provincia() { ID = 44, IdPais = 5, Nombre = "Córdoba" });
+            listProvincia.Add(new Provincia() { ID = 45, IdPais = 5, Nombre = "Santa Fe" });
+            listProvincia.Add(new Provincia() { ID = 46, IdPais = 5, Nombre = "Mendoza" });
+            listProvincia.Add(new Provincia() { ID = 47, IdPais = 5, Nombre = "Tucumán" });
+            listProvincia.Add(new Provincia() { ID = 48, IdPais = 5, Nombre = "Entre Ríos" });
+            listProvincia.Add(new Provincia() { ID = 49, IdPais = 5, Nombre = "Salta" });
+            listProvincia.Add(new Provincia() { ID = 50, IdPais = 5, Nombre = "Misiones" });
+            listProvincia.Add(new Provincia() { ID = 51, IdPais = 5, Nombre = "Neuquén" });
+            listProvincia.Add(new Provincia() { ID = 52, IdPais = 5, Nombre = "San Juan" });
+            listProvincia.Add(new Provincia() { ID = 53, IdPais = 6, Nombre = "São Paulo" });
+            listProvincia.Add(new Provincia() { ID = 54, IdPais = 6, Nombre = "Rio de Janeiro" });
+            listProvincia.Add(new Provincia() { ID = 55, IdPais = 6, Nombre = "Bahia" });
+            listProvincia.Add(new Provincia() { ID = 56, IdPais = 6, Nombre = "Minas Gerais" });
+            listProvincia.Add(new Provincia() { ID = 57, IdPais = 6, Nombre = "Rio Grande do Sul" });
+            listProvincia.Add(new Provincia() { ID = 58, IdPais = 6, Nombre = "Paraná" });
+            listProvincia.Add(new Provincia() { ID = 59, IdPais = 6, Nombre = "Pernambuco" });
+            listProvincia.Add(new Provincia() { ID = 60, IdPais = 6, Nombre = "Santa Catarina" });
+            listProvincia.Add(new Provincia() { ID = 61, IdPais = 6, Nombre = "Ceará" });
+            listProvincia.Add(new Provincia() { ID = 62, IdPais = 6, Nombre = "Goiás" });
+            listProvincia.Add(new Provincia() { ID = 63, IdPais = 7, Nombre = "Ontario" });
+            listProvincia.Add(new Provincia() { ID = 64, IdPais = 7, Nombre = "Quebec" });
+            listProvincia.Add(new Provincia() { ID = 65, IdPais = 7, Nombre = "British Columbia" });
+            listProvincia.Add(new Provincia() { ID = 66, IdPais = 7, Nombre = "Alberta" });
+            listProvincia.Add(new Provincia() { ID = 67, IdPais = 7, Nombre = "Manitoba" });
+            listProvincia.Add(new Provincia() { ID = 68, IdPais = 7, Nombre = "Saskatchewan" });
+            listProvincia.Add(new Provincia() { ID = 69, IdPais = 7, Nombre = "Nova Scotia" });
+            listProvincia.Add(new Provincia() { ID = 70, IdPais = 7, Nombre = "New Brunswick" });
+            listProvincia.Add(new Provincia() { ID = 71, IdPais = 7, Nombre = "Newfoundland and Labrador" });
+            listProvincia.Add(new Provincia() { ID = 72, IdPais = 7, Nombre = "Prince Edward Island" });
+            listProvincia.Add(new Provincia() { ID = 73, IdPais = 8, Nombre = "Île-de-France" });
+            listProvincia.Add(new Provincia() { ID = 74, IdPais = 8, Nombre = "Auvergne-Rhône-Alpes" });
+            listProvincia.Add(new Provincia() { ID = 75, IdPais = 8, Nombre = "Occitanie" });
+            listProvincia.Add(new Provincia() { ID = 76, IdPais = 8, Nombre = "Hauts-de-France" });
+            listProvincia.Add(new Provincia() { ID = 77, IdPais = 8, Nombre = "Provence-Alpes-Côte d'Azur" });
+            listProvincia.Add(new Provincia() { ID = 78, IdPais = 8, Nombre = "Nouvelle-Aquitaine" });
+            listProvincia.Add(new Provincia() { ID = 79, IdPais = 8, Nombre = "Grand Est" });
+            listProvincia.Add(new Provincia() { ID = 80, IdPais = 8, Nombre = "Pays de la Loire" });
+            listProvincia.Add(new Provincia() { ID = 81, IdPais = 8, Nombre = "Bretagne" });
+            listProvincia.Add(new Provincia() { ID = 82, IdPais = 8, Nombre = "Normandie" });
+            listProvincia.Add(new Provincia() { ID = 83, IdPais = 9, Nombre = "Nordrhein-Westfalen" });
+            listProvincia.Add(new Provincia() { ID = 84, IdPais = 9, Nombre = "Bayern" });
+            listProvincia.Add(new Provincia() { ID = 85, IdPais = 9, Nombre = "Baden-Württemberg" });
+            listProvincia.Add(new Provincia() { ID = 86, IdPais = 9, Nombre = "Niedersachsen" });
+            listProvincia.Add(new Provincia() { ID = 87, IdPais = 9, Nombre = "Hessen" });
+            listProvincia.Add(new Provincia() { ID = 88, IdPais = 9, Nombre = "Rheinland-Pfalz" });
+            listProvincia.Add(new Provincia() { ID = 89, IdPais = 9, Nombre = "Berlin" });
+            listProvincia.Add(new Provincia() { ID = 90, IdPais = 9, Nombre = "Schleswig-Holstein" });
+            listProvincia.Add(new Provincia() { ID = 91, IdPais = 9, Nombre = "Brandenburg" });
+            listProvincia.Add(new Provincia() { ID = 92, IdPais = 9, Nombre = "Sachsen" });
+            listProvincia.Add(new Provincia() { ID = 93, IdPais = 10, Nombre = "Lombardia" });
+            listProvincia.Add(new Provincia() { ID = 94, IdPais = 10, Nombre = "Lazio" });
+            listProvincia.Add(new Provincia() { ID = 95, IdPais = 10, Nombre = "Campania" });
+            listProvincia.Add(new Provincia() { ID = 96, IdPais = 10, Nombre = "Sicilia" });
+            listProvincia.Add(new Provincia() { ID = 97, IdPais = 10, Nombre = "Veneto" });
+            listProvincia.Add(new Provincia() { ID = 98, IdPais = 10, Nombre = "Emilia-Romagna" });
+            listProvincia.Add(new Provincia() { ID = 99, IdPais = 10, Nombre = "Piemonte" });
+            listProvincia.Add(new Provincia() { ID = 100, IdPais = 10, Nombre = "Toscana" });
+            listProvincia.Add(new Provincia() { ID = 101, IdPais = 10, Nombre = "Calabria" });
+            listProvincia.Add(new Provincia() { ID = 102, IdPais = 10, Nombre = "Puglia" });
+
+
+
+
+
+
+
 
         }
 
@@ -570,6 +687,21 @@ namespace RedDocMed2
         {
             MTVTEXT.Text = "";
             MessageBox.Show("Informacion Borrada");
+        }
+
+        private void Nombre_del_Paciente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbPais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
